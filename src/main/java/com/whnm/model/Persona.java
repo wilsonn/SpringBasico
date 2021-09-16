@@ -1,10 +1,18 @@
 package com.whnm.model;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Persona {
+	@Value(value = "1")
 	private int id;
+	@Value(value = "Wilson")
 	private String nombres;
+	@Value(value = "Neira")
 	private String apellidos;
 	
+	public Persona() {
+	}
+
 	public Persona(int id, String nombres, String apellidos) {
 		this.id = id;
 		this.nombres = nombres;

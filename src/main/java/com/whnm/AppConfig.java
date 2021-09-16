@@ -19,6 +19,6 @@ public class AppConfig {
 	
 	@Bean(name="persona")
 	public Persona persona() {
-		return new Persona(1,"Wilson", "Neira");
+		return new Persona();
 	}
 }
